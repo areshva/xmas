@@ -183,12 +183,17 @@ document.querySelector('.bibble').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
     var messageDiv = document.getElementById('message');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Bibble clicked'); 
 
     // check off the 'Bibble' task 
@@ -205,12 +210,17 @@ document.querySelector('.boy').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
     var messageDiv = document.getElementById('message3');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Boy clicked'); 
 
     // check off the 'Boy' task
@@ -227,11 +237,17 @@ document.querySelector('.pole').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message1');
     messageDiv.style.display = 'block'; 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000);
+    }, 2000);
     console.log('TV clicked');
     
     // check off the 'TV' task 
@@ -252,11 +268,17 @@ document.querySelector('.baby').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message2');
     messageDiv.style.display = 'block'; // Show the message
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000);
+    }, 2000);
     console.log('Baby clicked');
 
     // Check off the 'Baby' task in the to-do list
@@ -274,12 +296,18 @@ document.querySelector('.misscarriage').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message4');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Misscarriage clicked'); 
 
     // check off the 'Bibble' task 
@@ -296,12 +324,18 @@ document.querySelector('.anklet').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message5');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Anklet clicked'); 
 
     // check off the 'Anklet' task 
@@ -319,12 +353,18 @@ document.querySelector('.baboon1').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message6');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Baboon clicked'); 
 
     // check off the 'Baboon' task 
@@ -346,12 +386,18 @@ document.querySelector('.woodchuck').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message7');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('woodchuck clicked'); 
 
     // check off the 'woodchuck' task 
@@ -369,12 +415,18 @@ document.querySelector('.turtles').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message8');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('turtles clicked'); 
 
     // check off the 'turtles' task 
@@ -392,12 +444,18 @@ document.querySelector('.bop').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message9');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('Dababy clicked'); 
 
     // check off the 'dirty' task 
@@ -414,12 +472,18 @@ document.querySelector('.dirty').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
+    setTimeout(function() {
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio to the start
+    }, 700);
+
+
     var messageDiv = document.getElementById('message10');
     messageDiv.style.display = 'block'; 
 
     setTimeout(function() {
         messageDiv.style.display = 'none';
-    }, 3000); 
+    }, 2000); 
     console.log('dirty clicked'); 
 
     // check off the 'dirty' task 
