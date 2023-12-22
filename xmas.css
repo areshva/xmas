@@ -156,7 +156,7 @@ body {
 }
 
 .bop {
-    width: 50px; 
+    width: 45px; 
     top: 525px;
     left: 1135px;
     z-index: 5;
@@ -164,8 +164,8 @@ body {
 }
 
 .pasta {
-    width: 100px; 
-    top: 510px;
+    width: 110px; 
+    top: 500px;
     left: 1115px;
     z-index: 8;
 }
@@ -261,16 +261,16 @@ body {
 }
 
 .turtles {
-    width: 70px;
+    width: 65px;
     top: 660px;
     left: 60px; 
     z-index: 10;
 }
 
 .bowl {
-    width: 90px;
-    top: 645px;
-    left: 50px; 
+    width: 100px;
+    top: 635px;
+    left: 45px; 
     z-index: 11;
     transform: scaleX(-1);
 }

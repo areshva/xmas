@@ -519,6 +519,6 @@ function celebrateCompletion() {
 
     setTimeout(function() {
         window.location.href = 'final.html'; // Replace with the path to your new HTML page
-    }, 5000);
+    }, 4000);
    
 }
