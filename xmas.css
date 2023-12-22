@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background-color: #a7c7e7; 
+    background-color:rgb(93, 133, 94); 
     margin: 0;
 }
 
@@ -73,6 +73,13 @@ body {
     z-index: 9;
 }
 
+.poster {
+    width: 150px; 
+    top: 120px;
+    left: 1280px;
+    z-index: 5;
+}
+
 .window {
     width: 390px; 
     top: 120px;
@@ -143,7 +150,7 @@ body {
 
 .tv {
     width: 300px;
-    top: 260px;
+    top: 330px;
     left: 900px;
 
 }
@@ -246,12 +253,19 @@ body {
     transform: scaleX(-1);
 }
 
+.dababy {
+    width: 120px; 
+    top: 120px;
+    left: 1280px;
+    z-index: 4;
+}
 
 .icon {
     cursor: pointer;
     font-size: 24px;
-    background-color: rgb(145, 169, 206);
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: rgb(46, 83, 52);
+    color: white;
+    font-family: 'Arial', serif, sans-serif;
 }
 
 #todoList {
@@ -394,4 +408,36 @@ body {
     border: 1px solid black;
     border-radius: 5px;
     z-index: 10;
+}
+
+/* DaBaby */
+
+#message9 {
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+}
+#musicControl {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block level */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Cursor as pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#musicControl:hover {
+    background-color: #45a049; /* Darker green when hovered */
 }

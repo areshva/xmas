@@ -15,6 +15,22 @@ function moveCat() {
 }
 document.getElementById("cat2").addEventListener("click", moveCat);
 
+// MOVING POSTER FOR DABABY
+function movePoster() {
+    var poster = document.getElementById("poster");
+
+    var originalTop = poster.style.top;
+    var originalLeft = poster.style.left;
+
+    poster.style.top = '120px'; 
+    poster.style.left = '1100px'; 
+
+    setTimeout(function() {
+        poster.style.top = originalTop;
+        poster.style.left = originalLeft;
+    }, 3000); 
+}
+document.getElementById("poster").addEventListener("click", movePoster);
 
 // MOVING PASTA FOR BABY
 function movePasta() {
@@ -85,7 +101,7 @@ function moveBlind1() {
 }
 document.getElementById("blind1").addEventListener("click", moveBlind1);
 
-// MOVING MONITOR FOR BABOOB+NS
+// MOVING MONITOR FOR BABOONS
 function moveMonitor() {
     var monitor = document.getElementById("monitor");
 
@@ -129,8 +145,8 @@ function moveShelf() {
     var originalTop = shelf.style.top;
     var originalLeft = shelf.style.left;
 
-    shelf.style.top = '540px'; 
-    shelf.style.left = '0px';
+    shelf.style.top = '140px'; 
+    shelf.style.left = '300px';
 
     setTimeout(function() {
         shelf.style.top = originalTop;
@@ -147,6 +163,9 @@ document.getElementById("todoIcon").addEventListener("click", function() {
 
 //CLICKING BIBBLE
 document.querySelector('.bibble').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message');
     messageDiv.style.display = 'block'; 
 
@@ -159,10 +178,14 @@ document.querySelector('.bibble').addEventListener('click', function() {
     var bibbleCheckbox = document.getElementById("bibbleCheckbox");
     bibbleCheckbox.checked = true;
     document.getElementById("taskBibble").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 //CLICKING BOY
 document.querySelector('.boy').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message3');
     messageDiv.style.display = 'block'; 
 
@@ -175,10 +198,14 @@ document.querySelector('.boy').addEventListener('click', function() {
     var boyCheckbox = document.getElementById("boyCheckbox");
     boyCheckbox.checked = true;
     document.getElementById("taskBoy").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 //CLICKLING TV
 document.querySelector('.pole').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message1');
     messageDiv.style.display = 'block'; 
     setTimeout(function() {
@@ -190,10 +217,18 @@ document.querySelector('.pole').addEventListener('click', function() {
     var tvCheckbox = document.getElementById("tvCheckbox");
     tvCheckbox.checked = true;
     document.getElementById("taskTV").style.textDecoration = "line-through";
+    this.style.display = 'none';
+    var tvElement = document.querySelector('.tv');
+    if (tvElement) {
+        tvElement.style.display = 'none';
+    }
 });
 
 //CLICKING BABY
 document.querySelector('.baby').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message2');
     messageDiv.style.display = 'block'; // Show the message
     setTimeout(function() {
@@ -205,11 +240,15 @@ document.querySelector('.baby').addEventListener('click', function() {
     var babyCheckbox = document.getElementById("babyCheckbox");
     babyCheckbox.checked = true;
     document.getElementById("taskBaby").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 
 //CLICKING MISSCARRIAGE
 document.querySelector('.misscarriage').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message4');
     messageDiv.style.display = 'block'; 
 
@@ -222,10 +261,14 @@ document.querySelector('.misscarriage').addEventListener('click', function() {
     var misscarriageCheckbox = document.getElementById("misscarriageCheckbox");
     misscarriageCheckbox.checked = true;
     document.getElementById("taskMisscarriage").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 //CLICKING ANKLET
 document.querySelector('.anklet').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message5');
     messageDiv.style.display = 'block'; 
 
@@ -238,11 +281,15 @@ document.querySelector('.anklet').addEventListener('click', function() {
     var ankletCheckbox = document.getElementById("ankletCheckbox");
     ankletCheckbox.checked = true;
     document.getElementById("taskAnklet").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 
 //CLICKING BABOON
 document.querySelector('.baboon1').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message6');
     messageDiv.style.display = 'block'; 
 
@@ -255,11 +302,19 @@ document.querySelector('.baboon1').addEventListener('click', function() {
     var baboonCheckbox = document.getElementById("baboonCheckbox");
     baboonCheckbox.checked = true;
     document.getElementById("taskBaboon").style.textDecoration = "line-through";
+    this.style.display = 'none';
+    
+    document.getElementById('baboon2').style.display = 'none';
+    document.getElementById('baboon3').style.display = 'none';
+    
 });
 
-
+    
 //CLICKING WOODCHUCK
 document.querySelector('.woodchuck').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message7');
     messageDiv.style.display = 'block'; 
 
@@ -272,11 +327,15 @@ document.querySelector('.woodchuck').addEventListener('click', function() {
     var woodchuckCheckbox = document.getElementById("woodchuckCheckbox");
     woodchuckCheckbox.checked = true;
     document.getElementById("taskWoodchuck").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
 
 
 //CLICKING TURTLES
 document.querySelector('.turtles').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
     var messageDiv = document.getElementById('message8');
     messageDiv.style.display = 'block'; 
 
@@ -286,7 +345,29 @@ document.querySelector('.turtles').addEventListener('click', function() {
     console.log('turtles clicked'); 
 
     // check off the 'turtles' task 
-    var wturtlesCheckbox = document.getElementById("turtlesCheckbox");
+    var turtlesCheckbox = document.getElementById("turtlesCheckbox");
     turtlesCheckbox.checked = true;
     document.getElementById("taskTurtles").style.textDecoration = "line-through";
+    this.style.display = 'none';
+});
+
+
+//CLICKING DABABY
+document.querySelector('.dababy').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
+    var messageDiv = document.getElementById('message9');
+    messageDiv.style.display = 'block'; 
+
+    setTimeout(function() {
+        messageDiv.style.display = 'none';
+    }, 3000); 
+    console.log('dababy clicked'); 
+
+    // check off the 'dababy' task 
+    var dababyCheckbox = document.getElementById("dababyCheckbox");
+    dababyCheckbox.checked = true;
+    document.getElementById("taskDababy").style.textDecoration = "line-through";
+    this.style.display = 'none';
 });
