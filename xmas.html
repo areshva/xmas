@@ -6,6 +6,8 @@
 </head>
 <body>
     <audio id="clickSound" src="success.mp3" preload="auto"></audio>
+    <audio id="celebrationSound" src="celebrate.mp3" preload="auto"></audio>
+
 
     <img src="images/cat.png" alt="Cat" class="decor cat1", id = 'cat1'>
     <img src="images/cat2.png" alt="Cat 2" class="decor cat2" id="cat2">
@@ -69,10 +71,7 @@
     <img src="hunt/turtles.png" alt="Turtles" class="decor turtles" id="turtles">
     <div id="message8" style="display: none;">Yay! A Raphael, A Michaelangelo And The Other Two Teenage Mutant Ninja Turtles Found!</div>
 
-    <img src="hunt/dababy.png" alt="Dababy" class="decor dababy" id="dababy">
-    <div id="message9" style="display: none;">Yay! Dababy Found!</div>
-
-    <img src="hunt/dababy.png" alt="Dababy" class="decor dababy" id="dababy">
+    <img src="hunt/bop.png" alt="Bop" class="decor bop" id="bop">
     <div id="message9" style="display: none;">Yay! Dababy Found!</div>
 
     <img src="hunt/dirty.png" alt="Dirty" class="decor dirty" id="dirty">
@@ -84,7 +83,7 @@
         <li id="taskBaby"><input type="checkbox" id="babyCheckbox"> A Little Chinese Baby </li>
         <li id="taskBoy"><input type="checkbox" id="boyCheckbox"> A Big Indian Boy </li>
         <li id="taskTV"><input type="checkbox" id="tvCheckbox"> An Amazon 55 inch fire TV </li>
-        <li id="taskDababy"><input type="checkbox" id="dababyCheckbox"> DaBaby </li>
+        <li id="taskBop"><input type="checkbox" id="bopCheckbox"> DaBaby </li>
         <li id="taskTurtles"><input type="checkbox" id="turtlesCheckbox"> A Raphael, A Michaelangelo And The Other Two Teenage Mutant Ninja Turtles </li>
         <li id="taskBibble"><input type="checkbox" id="bibbleCheckbox"> A Bibble </li>
         <li id="taskMisscarriage"><input type="checkbox" id="misscarriageCheckbox"> Lost So Many Babies, They Should Call Her Misscarriage</li>
@@ -117,7 +116,11 @@
             location.href = "xmas.html"; // Redirect to the xmas.html page
         };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
 
     <script src="xmas.js"></script>
+
+
 </body>
 </html>

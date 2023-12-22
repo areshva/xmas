@@ -155,7 +155,7 @@ body {
     transform: scaleX(-1);
 }
 
-.baby {
+.bop {
     width: 50px; 
     top: 525px;
     left: 1135px;
@@ -275,8 +275,8 @@ body {
     transform: scaleX(-1);
 }
 
-.dababy {
-    width: 120px; 
+.baby {
+    width: 50px; 
     top: 120px;
     left: 1280px;
     z-index: 4;

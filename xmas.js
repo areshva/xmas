@@ -196,6 +196,8 @@ document.querySelector('.bibble').addEventListener('click', function() {
     bibbleCheckbox.checked = true;
     document.getElementById("taskBibble").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 //CLICKING BOY
@@ -216,6 +218,8 @@ document.querySelector('.boy').addEventListener('click', function() {
     boyCheckbox.checked = true;
     document.getElementById("taskBoy").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 //CLICKLING TV
@@ -239,6 +243,8 @@ document.querySelector('.pole').addEventListener('click', function() {
     if (tvElement) {
         tvElement.style.display = 'none';
     }
+
+    checkAllTasksComplete();
 });
 
 //CLICKING BABY
@@ -258,6 +264,8 @@ document.querySelector('.baby').addEventListener('click', function() {
     babyCheckbox.checked = true;
     document.getElementById("taskBaby").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 
@@ -279,6 +287,8 @@ document.querySelector('.misscarriage').addEventListener('click', function() {
     misscarriageCheckbox.checked = true;
     document.getElementById("taskMisscarriage").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 //CLICKING ANKLET
@@ -299,6 +309,8 @@ document.querySelector('.anklet').addEventListener('click', function() {
     ankletCheckbox.checked = true;
     document.getElementById("taskAnklet").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 
@@ -323,6 +335,8 @@ document.querySelector('.baboon1').addEventListener('click', function() {
     
     document.getElementById('baboon2').style.display = 'none';
     document.getElementById('baboon3').style.display = 'none';
+
+    checkAllTasksComplete();
     
 });
 
@@ -345,6 +359,8 @@ document.querySelector('.woodchuck').addEventListener('click', function() {
     woodchuckCheckbox.checked = true;
     document.getElementById("taskWoodchuck").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 
@@ -366,11 +382,13 @@ document.querySelector('.turtles').addEventListener('click', function() {
     turtlesCheckbox.checked = true;
     document.getElementById("taskTurtles").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 
 //CLICKING DABABY
-document.querySelector('.dababy').addEventListener('click', function() {
+document.querySelector('.bop').addEventListener('click', function() {
     var audio = document.getElementById('clickSound');
     audio.play();
 
@@ -380,13 +398,15 @@ document.querySelector('.dababy').addEventListener('click', function() {
     setTimeout(function() {
         messageDiv.style.display = 'none';
     }, 3000); 
-    console.log('dababy clicked'); 
+    console.log('Dababy clicked'); 
 
-    // check off the 'dababy' task 
-    var dababyCheckbox = document.getElementById("dababyCheckbox");
-    dababyCheckbox.checked = true;
-    document.getElementById("taskDababy").style.textDecoration = "line-through";
+    // check off the 'dirty' task 
+    var bopCheckbox = document.getElementById("bopCheckbox");
+    bopCheckbox.checked = true;
+    document.getElementById("taskBop").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
 
 //CLICKING DIRTY
@@ -407,4 +427,34 @@ document.querySelector('.dirty').addEventListener('click', function() {
     dirtyCheckbox.checked = true;
     document.getElementById("taskDirty").style.textDecoration = "line-through";
     this.style.display = 'none';
+
+    checkAllTasksComplete();
 });
+
+function checkAllTasksComplete() {
+    var allCheckboxes = document.querySelectorAll("#todoList input[type='checkbox']");
+    var allChecked = Array.from(allCheckboxes).every(checkbox => checkbox.checked);
+
+    if (allChecked) {
+        // Trigger the celebration
+        celebrateCompletion();
+    }
+}
+
+function celebrateCompletion() {
+
+    alert("Congratulations! All tasks are complete!");
+    // Here you can add more celebration effects like playing a sound or showing confetti animation
+    confetti();
+
+
+    var celebrationSound = document.getElementById('celebrationSound');
+    if (celebrationSound) {
+        celebrationSound.play();
+    }
+
+    setTimeout(function() {
+        window.location.href = 'final.html'; // Replace with the path to your new HTML page
+    }, 5000);
+   
+}
