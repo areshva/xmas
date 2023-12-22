@@ -9,5 +9,28 @@
     <img src="iou/iou1.png" alt="First Image" />
     <img src="iou/iou2.png" alt="Second Image" />
     <img src="iou/iou3.png" alt="Third Image" />
+
+    <button id="musicControl">Play/Pause Music</button>
+    <audio id="backgroundMusic" src="happy.mp3" loop autoplay></audio>
+
+    <script>
+        var backgroundMusic = document.getElementById('backgroundMusic');
+        var musicControl = document.getElementById('musicControl');
+
+        musicControl.addEventListener('click', function() {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                this.textContent = 'Pause Music';
+            } else {
+                backgroundMusic.pause();
+                this.textContent = 'Play Music';
+            }
+        });
+
+        document.getElementById("startButton").onclick = function() {
+            location.href = "xmas.html"; // Redirect to the xmas.html page
+        };
+    </script>
+
 </body>
 </html>
