@@ -80,6 +80,28 @@ body {
     z-index: 5;
 }
 
+
+.wshelf {
+    width: 150px; 
+    top: 120px;
+    left: 1050px;
+    z-index: 4;
+}
+
+.flower {
+    width: 100px; 
+    top: 110px;
+    left: 1050px;
+    z-index: 6;
+}
+
+.dirty {
+    width: 50px; 
+    top: 135px;
+    left: 1075px;
+    z-index: 5;
+}
+
 .window {
     width: 390px; 
     top: 120px;
@@ -413,6 +435,18 @@ body {
 /* DaBaby */
 
 #message9 {
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#message10 {
     position: absolute;
     top: 20%; 
     left: 50%;

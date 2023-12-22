@@ -15,6 +15,23 @@ function moveCat() {
 }
 document.getElementById("cat2").addEventListener("click", moveCat);
 
+// MOVING FLOWER FOR ARESHVA
+function moveFlower() {
+    var flower = document.getElementById("flower");
+
+    var originalTop = flower.style.top;
+    var originalLeft = flower.style.left;
+
+    flower.style.top = '110px'; 
+    flower.style.left = '970px'; 
+
+    setTimeout(function() {
+        flower.style.top = originalTop;
+        flower.style.left = originalLeft;
+    }, 3000); 
+}
+document.getElementById("flower").addEventListener("click", moveFlower);
+
 // MOVING POSTER FOR DABABY
 function movePoster() {
     var poster = document.getElementById("poster");
@@ -369,5 +386,25 @@ document.querySelector('.dababy').addEventListener('click', function() {
     var dababyCheckbox = document.getElementById("dababyCheckbox");
     dababyCheckbox.checked = true;
     document.getElementById("taskDababy").style.textDecoration = "line-through";
+    this.style.display = 'none';
+});
+
+//CLICKING DIRTY
+document.querySelector('.dirty').addEventListener('click', function() {
+    var audio = document.getElementById('clickSound');
+    audio.play();
+
+    var messageDiv = document.getElementById('message10');
+    messageDiv.style.display = 'block'; 
+
+    setTimeout(function() {
+        messageDiv.style.display = 'none';
+    }, 3000); 
+    console.log('dirty clicked'); 
+
+    // check off the 'dirty' task 
+    var dirtyCheckbox = document.getElementById("dirtyCheckbox");
+    dirtyCheckbox.checked = true;
+    document.getElementById("taskDirty").style.textDecoration = "line-through";
     this.style.display = 'none';
 });
