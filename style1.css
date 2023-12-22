@@ -21,3 +21,16 @@ body {
     display: inline-block;
     margin: 20px 0;
 }
+
+#openImagesButton {
+    background-color: pink; /* Pink background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block level */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor as pointer */
+    border-radius: 5px; /* Rounded corners */
+}

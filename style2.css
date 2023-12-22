@@ -1,0 +1,12 @@
+body {
+    background-color: pink; /* Set the background color to pink */
+    text-align: center; /* Center-align the images */
+    padding-top: 20px; /* Add some space at the top */
+}
+
+img {
+    display: block; /* Each image is a block-level element */
+    margin: 10px auto; /* Add margin to the top and bottom, auto centers horizontally */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Adjust maximum width as needed */
+}

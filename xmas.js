@@ -186,7 +186,7 @@ document.querySelector('.bibble').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
     var messageDiv = document.getElementById('message');
     messageDiv.style.display = 'block'; 
@@ -213,7 +213,7 @@ document.querySelector('.boy').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
     var messageDiv = document.getElementById('message3');
     messageDiv.style.display = 'block'; 
@@ -240,7 +240,7 @@ document.querySelector('.pole').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message1');
@@ -271,7 +271,7 @@ document.querySelector('.baby').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message2');
@@ -299,7 +299,7 @@ document.querySelector('.misscarriage').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message4');
@@ -327,7 +327,7 @@ document.querySelector('.anklet').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message5');
@@ -356,7 +356,7 @@ document.querySelector('.baboon1').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message6');
@@ -389,7 +389,7 @@ document.querySelector('.woodchuck').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message7');
@@ -418,7 +418,7 @@ document.querySelector('.turtles').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message8');
@@ -447,7 +447,7 @@ document.querySelector('.bop').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message9');
@@ -475,7 +475,7 @@ document.querySelector('.dirty').addEventListener('click', function() {
     setTimeout(function() {
         audio.pause();
         audio.currentTime = 0; // Reset the audio to the start
-    }, 700);
+    }, 900);
 
 
     var messageDiv = document.getElementById('message10');
